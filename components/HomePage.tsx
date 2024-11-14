@@ -1,32 +1,8 @@
-import { useState, useEffect } from 'react';
-
 const HomePage = () => {
-  const [test, setTest] = useState();
-  useEffect(() => {
-    const fetchTestAPI = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/home/test', {
-          method: 'GET',
-          credentials: 'include',
-        });
-        if (response.ok) {
-          const test = await response.json();
-          setTest(test);
-        } else {
-          console.error('Failed to fetch user info');
-        }
-      } catch (error) {
-        console.error('Error fetching user info:', error);
-      }
-    };
-
-    fetchTestAPI();
-  }, []);
   return (
     <div className='lg:my-20 my-10'>
       <div className='flex justify-center lg:text-4xl md:text-3xl text-2xl text-sky-500 lg:my-10 my-4'>
-        {/* Page replacement Algorithms */}
-        {test ? <span>test</span> : <span>...</span>}
+        Page replacement Algorithms
       </div>
       <div className='lg:mx-20 md:mx-10 mx-4 text-lg dark:text-neutral-500 text-black lg:indent-16 indent-6'>
         <p>
