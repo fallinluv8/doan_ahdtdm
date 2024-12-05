@@ -10,7 +10,7 @@ const Footer = () => {
           <p>Pham Hoang Phuc</p>
         </div>
         <div>
-          <p>Nhosm 3TV</p>
+          <p>Group 3TV</p>
           <p>Nguyen Nhu Quang Tung</p>
           <p>Dang Quoc Thai</p>
           <p>Pham Hoang Phuc</p>
